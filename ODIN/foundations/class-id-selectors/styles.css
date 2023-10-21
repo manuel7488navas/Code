@@ -1,0 +1,21 @@
+.primera{
+    color: black;
+    background-color: lightpink; 
+    font-family: Verdana, "Dejavu sans", sans-serif;
+}
+
+.ajustar-font-size{
+    font-size: 24px;
+}
+
+#segunda{
+    color: blue;
+    font-size: 36px;
+    font-family: "Verdana", "Dejavu sans", sans-serif;
+}
+
+#cuarta{
+    background-color: lightgreen;
+    font-weight: bold;
+    font-family: Verdana, "Dejavu sans", sans-serif;
+}
