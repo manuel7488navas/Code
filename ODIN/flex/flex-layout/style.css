@@ -6,15 +6,25 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction: column;
+
 
 
   
 }
 
 .content{
-
-    text-align: center;
-    justify-content: center;
+   text-align: center;
+   flex:1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+  
+  
+    
+    
     
 }
 
@@ -29,7 +39,7 @@ button {
     border: none;
     border-radius: 10px;
     background: #c9c9c99e;
-    padding:5px;
+    padding:8px;
 }
 
 input {
@@ -46,7 +56,7 @@ input {
     position:fixed;
     width: 100%;
     top: 0%;
-    padding: 5px;
+    padding: 2px;
    
 
 }
@@ -57,7 +67,8 @@ input {
     position: fixed;    
     bottom: 0px;    
     width: 100%;
-    padding: 5px;
+    padding: 2px;
+    
   
    
 }
