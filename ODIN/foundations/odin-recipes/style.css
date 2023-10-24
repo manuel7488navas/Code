@@ -6,12 +6,12 @@ body {
 
 
 .titulo{
-    background-color: lightblue;
+    background-color: rgba(173, 216, 230, 0.487);
     font-size:50px;
     text-align: center;
     margin: 20px;
     padding:10px;
-    border: 10px solid rgb(0, 130, 206);
+    border: 10px solid rgba(0, 108, 171, 0.292);
 }
 
 .center{
@@ -23,14 +23,17 @@ body {
 h2{
     font-style: italic;
     text-align: center;
-    margin: 20px;
+    margin: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
     padding:10px;
-    border: 10px solid rgb(0, 130, 206);
+    border: 8px solid rgba(0, 130, 206, 0.253);
+    
     
 }
 
 #sombra{
-    background-color: rgb(224, 223, 223);
+    background-color: rgba(175, 175, 175, 0.23);
     margin: 20px;
     padding:10px;
     border: 10px solid rgba(0, 130, 206, 0.409);
