@@ -1,17 +1,20 @@
 * {
-    padding:0;
-    margin:0;
-    font-size:40px;
+    padding:100;
+    background-color: aliceblue;
+    margin:100;
+    font-size:60px;
+    font-style: bold;
+    text-align: center;
     box-sizing: border-box;
 }
 
 .box-one{
     background-color: #EB5757;
-    padding: 10px;
-    height: 100px;
-    weight:100px;
-    border: 30px solid #9B51E0;
-    margin:100px;
+    padding: 200px;
+    height: auto;
+    weight: 100px;
+    border: 20px solid #9B51E0;
+    margin:200px;
    
 
 }
@@ -19,9 +22,9 @@
 .box-two{
     background-color: #2DBCDB;
     padding: 10px;
-    height: 100px;
-    weight:100px;
-    border: 30px solid #9B51E0;
+    height: auto;
+    weight: 200px;
+    border: 10px solid #9B51E0;
     margin:100px;
 
 }

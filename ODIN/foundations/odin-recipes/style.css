@@ -9,6 +9,9 @@ body {
     background-color: lightblue;
     font-size:50px;
     text-align: center;
+    margin: 20px;
+    padding:10px;
+    border: 10px solid rgb(0, 130, 206);
 }
 
 .center{
@@ -19,11 +22,18 @@ body {
 
 h2{
     font-style: italic;
+    text-align: center;
+    margin: 20px;
+    padding:10px;
+    border: 10px solid rgb(0, 130, 206);
     
 }
 
 #sombra{
     background-color: rgb(224, 223, 223);
+    margin: 20px;
+    padding:10px;
+    border: 10px solid rgba(0, 130, 206, 0.409);
 }
 
 h3{
@@ -32,9 +42,11 @@ h3{
 }
 
 .button{
-  background-color: #3f92ff;
+  background-color: #194b8d;
   color: white;
-  padding: 10px 10px;
   cursor:pointer;
+  margin: auto;
+  padding: 8px 24px;
+  border: 10px;
 
 }
