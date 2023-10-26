@@ -1,14 +1,18 @@
 html, body {
     background-color: #1F2937;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    height: 100%;
+    font-family:'Roboto';
     width: 100%;
+    height: 100%;
     margin:0;
-    overflow: hidden;
+
   }
   .header {
+    
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 40px;
   }
   .logo{
     font-size: 24px;
@@ -26,34 +30,37 @@ html, body {
 
     text-decoration: none;
     color: #e5e7eb;
-    font-size: 18px;
+    font-size: 14px;
     margin:10px;
   }
 
   .container{
-    overflow:hidden;
     width:100%;
-    height:100%;
+    height: 85vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
+   
+
 
   }
   .container1{
     background-color: #1F2937;
-    height:25%;
-    width: auto;
+    gap:10%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
   
   
   }
 
   .letters{
-   justify-content: space-between;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    margin-right: 200px;
 
   }
 
@@ -61,22 +68,31 @@ html, body {
     color:#F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    width: 400px;
     
   }
   #text2{
     color:#e5e7eb;
     font-size: 18px;
+    width: 400px;
+    margin-top: 20px;
+    
+    
+
   }
 
-  button{
+  .button1{
     color:#eeee;
     background-color:#3882F6;
+    border-block-end-color: #3882F6;
+    border-color: #e5e7eb;
     border-radius: 6px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 4px;
     padding-bottom: 4px;
-    margin:20px;
+    margin-top:20px;
+    justify-content: left;
   }
 
   .placeholder{
@@ -88,7 +104,6 @@ html, body {
     align-items: center;
     justify-content: center;
 
-    
   }
 
   .placeholder-text{
@@ -96,41 +111,37 @@ html, body {
    
   }
 
-
-
-
-
-
-
-
-
   .container2{
     background-color: #eee;
-    width:100%;
-    height:25%;
+   
+  }
+  .container2a{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 5%;
+    margin-bottom: 5%;
   }
 
   .title{
     color:#1F2937;
     font-size: 36px;
     font-weight: 900;
-    margin-top: 20px;
+    margin-top: 6%;
+    text-align: center;
   }
   .images{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    margin:3%;
   
-    
   }
   img{
     width: 120px;
     height: auto;
+    
+   
   }
 
   .text{
@@ -138,32 +149,105 @@ html, body {
    
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .container3{
- 
     background-color: #e5e7eb;
-    width:100%;
-    height:25%;
-   
+    display: flex;
+    justify-content: center;
   }
+  .container3a{
+    padding:10%;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap:25px;
+    
+ 
+   
+
+  }
+  .quote{
+    font-style: italic;
+    font-size: 36px;
+    color: #1F2937;
+    text-align: center;
+
+   
+
+ 
+
+  }
+.author{
+    font-weight: 900;
+    text-align:right;
+    
+   
+  
+  
+  }
+
+
   .container4{
 
     background-color: #eee;
-    width:100%;
-    height:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
   }
+
+  .box{
+    background-color: #3882F6;
+    width: 80%;
+    height:40px;
+    padding: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:5%;
+   
+  }
+  .textgl{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin-left: 50px;
+  }
+  .text3{
+    color:#e5e7eb;
+    font-weight: 900;
+    font-size: 18px;
+
+  }
+
+  .text4{
+    color: #e5e7eb;
+    font-size: 14px;
+  }
+
+  .button2{
+    color:#eeee;
+    font-size: 11px;
+    background-color:#3882F6;
+    border-block-end-color: #e5e7eb;
+    border-color: #e5e7eb;
+    border-radius: 7px;
+    width: 90px;
+    height: 25px;
+
+  }
+
+
+  .footer{
+    background-color: #1F2937;
+    color:#e5e7eb;
+    font-size: 14px;
+    height: 85px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+ 
+  }
+  
