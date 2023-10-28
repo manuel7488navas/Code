@@ -9,40 +9,36 @@ function getComputerChoice(){
 function game(playerSelection, computerSelection){
 
  computerSelection = getComputerChoice();
- playerSelection = prompt("Choose your fighter!!! ");
-
-
-
+ playerSelection = prompt("Choose your fighter!!!");
     
     if (playerSelection === "rock" && computerSelection === "scissors"){
-        return "You win!!!";
+        return alert("You win!!!");
     }else if (playerSelection === "rock" && computerSelection === "paper"){
-        return "You loose.";
+        return  alert("You loose.");
     }else if (playerSelection === "rock" && computerSelection === "rock"){
-        return "It´s a tie!!!.";
+        return  alert("It´s a tie!!!.");
     }else if (playerSelection === "paper" && computerSelection === "scissors"){
-        return "You loose.";
+        return  alert("You loose.");
     }else if (playerSelection === "paper" && computerSelection === "paper"){
-        return "It´s a tie!!!.";
+        return  alert("It´s a tie!!!.");
     }else if (playerSelection === "paper" && computerSelection === "rock"){
-        return "You win!!!";
+        return  alert("You win!!!");
     }else if (playerSelection === "scissors" && computerSelection === "scissors"){
-        return "It´s a tie!!!.";
+        return  alert("It´s a tie!!!.");
     }else if (playerSelection === "scissors" && computerSelection === "paper"){
-        return "You win!!!";
-    }else if (playerSelection === "scissors" && computerSelection === "rock")
-        return "You loose.";
-    } 
+        return  alert("You win!!!");
+    }else if (playerSelection === "scissors" && computerSelection === "rock"){
+        return  alert("You loose.");
+    }else if (playerSelection === ""){
+        return  alert("SAY SOMETHING.");
+    }
 
 
 
-    
-
-
-
-
-
-prompt(game());
+}
+for (let i = 5; i >=0; i--){
+    prompt(game());
+}
 
 
 
