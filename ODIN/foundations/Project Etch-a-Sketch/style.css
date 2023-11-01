@@ -28,9 +28,7 @@ main{
    width: 400px;
    height: 400px;
    display: grid;
-   grid-auto-columns: minmax(auto, 400px);
-   grid-auto-rows: minmax(auto, 400px);
- 
+
 }
 
 .cell{
@@ -48,11 +46,9 @@ button{
     height: 70px;
     border-radius: 50px;
     color:rgb(255, 255, 255);
-    position: absolute;
-    top:3%;
-    right:300px;
- 
-
+    position: fixed;
+    top:25px;
+    right: 900px;
 
 }
 
@@ -65,9 +61,9 @@ button{
     height: 70px;
     border-radius: 50px;
     color:rgb(255, 255, 255);
-    position: absolute;
-    top:3%;
-    right:200px;
+    position: fixed;
+    top:25px;
+    right: 800px;
 
 
 }

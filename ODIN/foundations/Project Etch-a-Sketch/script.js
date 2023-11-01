@@ -40,17 +40,14 @@ button.addEventListener('click',()=>{
           const numCol = promptValue;
           grid.style.gridTemplateColumns = `repeat(${numCol}, 1fr)`;
         }
-      
+
         }
-     
     }    
     
   }else{
     alert("Invalid Grid. You must enter a number between 1 and 100.");
   }
-
 }
-
 createGrid(promptValue);
 })
 
