@@ -3,6 +3,9 @@ document.body.appendChild(main);
 const grid = document.createElement("div");
 main.appendChild(grid);
 document.querySelector("div").className = "grid";
+const cell = document.createElement("div");
+grid.appendChild(cell);
+cell.className = "cell";
 const button = document.createElement("button");
 main.appendChild(button);
 button.className = "button"; 
@@ -24,6 +27,7 @@ button.addEventListener('click',()=>{
   function createGrid(cols){
     let rows = cols;
   if(promptValue>0 && promptValue<=100){
+    grid.removeChild(cell);
     for (let i = 0; i<rows; i++){
         for (let j = 0; j<cols; j++){
         const cell = document.createElement("div");
@@ -50,7 +54,6 @@ button.addEventListener('click',()=>{
 createGrid(promptValue);
 })
 
-
-
-
-
+resetButton.addEventListener('click',()=>{
+    window.location.reload();
+});
