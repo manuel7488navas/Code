@@ -21,15 +21,20 @@ button.addEventListener('click',()=>{
         const cell = document.createElement("div");
         grid.appendChild(cell);
         cell.className = "cell";
-         
         cell.addEventListener('mouseover', () => {
-
-          cell.style.backgroundColor = "rgb(28, 69, 113)";
-      
+          cell.style.backgroundColor = "grey";
         }); 
+        if (promptValue){
+          const numCol = promptValue;
+          grid.style.gridTemplateColumns = `repeat(${numCol}, 1fr)`;
+        }
+        
+
         }
       
-    }  
+    } 
+    
+ 
 
   }
   
