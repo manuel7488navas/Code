@@ -48,7 +48,7 @@ button{
     color:rgb(255, 255, 255);
     position: fixed;
     top:25px;
-    right: 900px;
+    left: 400px;
 
 }
 
@@ -63,7 +63,8 @@ button{
     color:rgb(255, 255, 255);
     position: fixed;
     top:25px;
-    right: 800px;
+    left: 500px;
+ 
 
 
 }
