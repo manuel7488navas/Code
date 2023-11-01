@@ -10,12 +10,20 @@ const buttonText = document.createElement("div");
 button.appendChild(buttonText);
 buttonText.className = "buttonText";
 buttonText.textContent = "Choose Grid Size";
+const resetButton = document.createElement("button");
+main.appendChild(resetButton);
+resetButton.className = "resetButton"; 
+const resetButtonText = document.createElement("div");
+resetButton.appendChild(resetButtonText);
+resetButtonText.className = "resetButtonText";
+resetButtonText.textContent = "Reset";
 
 
 button.addEventListener('click',()=>{
   const promptValue = prompt("Grid size.");
   function createGrid(cols){
     let rows = cols;
+  if(promptValue>0 && promptValue<=100){
     for (let i = 0; i<rows; i++){
         for (let j = 0; j<cols; j++){
         const cell = document.createElement("div");
@@ -24,35 +32,24 @@ button.addEventListener('click',()=>{
         cell.addEventListener('mouseover', () => {
           cell.style.backgroundColor = "grey";
         }); 
-        if (promptValue){
+        if (promptValue>0 && promptValue<=100){
           const numCol = promptValue;
           grid.style.gridTemplateColumns = `repeat(${numCol}, 1fr)`;
         }
-        
-
-        }
       
-    } 
+        }
+     
+    }    
     
- 
-
+  }else{
+    alert("Invalid Grid. You must enter a number between 1 and 100.");
   }
-  
-  createGrid(promptValue);
+
+}
+
+createGrid(promptValue);
 })
 
-
-
-/*cell.addEventListener('mouseover', () => {
-
-    cell.style.backgroundColor = "rgb(28, 69, 113)";
-
-  });
-
-  /*cell.addEventListener('mouseout', () => {
-
-    cell.style.backgroundColor = '';
-  });*/
 
 
 
