@@ -20,11 +20,12 @@ function createButton(button){
     for (let i = 0; i<cols; i++){
         const button = document.createElement("button");
         buttonGrid.appendChild(button);
-        button.className = `${[i]}`;
+        button.className = `${"abcdefghijklmnopqrst"[i]}`;
         //button.textContent = `${[i]}`;
        
         }
     }
 
 createButton(button);
+
 
