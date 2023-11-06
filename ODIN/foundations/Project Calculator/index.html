@@ -10,33 +10,33 @@
   <main>
     <div class="calculator">
       <div class="screen">
-        <p id="display">0</p>
+        <p class="display">0</p>
       </div>
       <div class="buttonGrid">
-        <button class="button" onclick="clearDisplay()">C</button>
-        <button class="button"></button>
-        <button class="button"></button>
-        <button class="button" onclick="appendToDisplay('/')">÷</button>
-        <button class="button" onclick="appendToDisplay('7')">7</button>
-        <button class="button" onclick="appendToDisplay('8')">8</button>
-        <button class="button" onclick="appendToDisplay('9')">9</button>
-        <button class="button" onclick="appendToDisplay('*')">X</button>
-        <button class="button" onclick="appendToDisplay('4')">4</button>
-        <button class="button" onclick="appendToDisplay('5')">5</button>
-        <button class="button" onclick="appendToDisplay('6')">6</button>
-        <button class="button" onclick="appendToDisplay('-')">-</button>
-        <button class="button" onclick="appendToDisplay('1')">1</button>
-        <button class="button" onclick="appendToDisplay('2')">2</button>
-        <button class="button" onclick="appendToDisplay('3')">3</button>
-        <button class="button" onclick="appendToDisplay('+')">+</button>
-        <button class="button" onclick="appendToDisplay('0')">0</button>
-        <button class="button" onclick="appendToDisplay('.')">.</button>
-        <button class="button" onclick="calculateResult()">=</button>
-        <button class="button"></button>
+        <button class="clear-button">C</button>
+        <button class="operator-button" id="backspace-button">←</button>
+        <button class="operator-button"></button>
+        <button class="operator-button">÷</button>
+        <button class="digit-button">7</button>
+        <button class="digit-button">8</button>
+        <button class="digit-button">9</button>
+        <button class="operator-button">X</button>
+        <button class="digit-button">4</button>
+        <button class="digit-button">5</button>
+        <button class="digit-button">6</button>
+        <button class="operator-button">-</button>
+        <button class="digit-button">1</button>
+        <button class="digit-button">2</button>
+        <button class="digit-button">3</button>
+        <button class="operator-button">+</button>
+        <button class="digit-button">0</button>
+        <button class="operator-button" id="decimal-button">.</button>
+        <button class="equals-button">=</button>
+        <button class="operator-button"></button>
       </div>
     </div>
   </main>
-
+  <div class="footer">Copyright © Manuel Navas 2023</div>
   <script src="myScript.js"></script>
 </body>
 </html>
