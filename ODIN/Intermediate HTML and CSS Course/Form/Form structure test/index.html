@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Form structure: Task 1</title>
+    <style>
+        form {
+      /* Center the form on the page */
+      margin: 0 auto;
+      width: 500px;
+      /* Form outline */
+      padding: 1em;
+      border: 1px solid #ccc;
+      border-radius: 2em;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    form li + li {
+      margin-top: 1em;
+    }
+    
+    label {
+      /* Uniform size & alignment */
+      display: inline-block;
+      width: 90px;
+      text-align: right;
+    }
+    
+    input,
+    textarea {
+      /* To make sure that all text fields have the same font settings
+         By default, textareas have a monospace font */
+      font: 1em sans-serif;
+    
+      /* Uniform text field size */
+      width: 300px;
+      box-sizing: border-box;
+    
+      /* Match form field borders */
+      border: 1px solid #999;
+    }
+    
+    input:focus,
+    textarea:focus {
+      /* Additional highlight for focused elements */
+      border-color: #000;
+    }
+    
+    textarea {
+      /* Align multiline text fields with their labels */
+      vertical-align: top;
+    
+      /* Provide space to type some text */
+      height: 5em;
+    }
+    
+    .button {
+      /* Align buttons with the text fields */
+      padding-left: 90px; /* same size as the label elements */
+    }
+    
+    button {
+      /* This extra margin represent roughly the same space as the space
+         between the labels and their text fields */
+      margin-left: 0.5em;
+    }
+    
+          </style>
+  </head>
+
+  <body>
+    <form>
+        <fieldset>
+        <legend>Personal details</legend>
+        <ul>
+            <li>
+          <label for="user_name">Name:</label>
+          <input type="text" id="name" name="name">
+            </li>
+            <li>
+          <label for="user_age">Age:</label>
+          <input type="number" id="age" name="age">
+        </li>
+        </ul>
+        </fieldset>
+        <fieldset>
+         <legend>Comment information</legend>
+        <ul>
+            <li>
+          <label for="user_comment">Comment:</label>
+          <input type="text" id="comment" name="comment">
+            </li>
+            <li>
+          <label for="user_email">Email:</label>
+          <input type="email" id="email" name="email">
+        </li>
+        </ul>
+        </fieldset>
+        
+        </form>
+            
+  </body>
+
+</html>
