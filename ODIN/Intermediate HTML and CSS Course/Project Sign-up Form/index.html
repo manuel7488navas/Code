@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="graphicsContainer">
+            <div class="frame">
+                <img src=".\images\odin-lined.png">
+                <h1>ODIN</h1>
+            </div>
+            <footer class="footer">Photo by Halie West on Unsplash</footer>
+        </div>
+        <div class="formContainer">
+            <div class="textWrapper">
+                <h2>This is not a real online service! You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em> to get started:
+                </h2>
+                <h2>You <em>know</em> you want to.</h2>
+            </div>
+          
+       
+                <form>
+                    <legend>Let's do this!</legend>
+                    <ul>
+                        <li class="col1">
+                            <label for="firstName">FIRST NAME</label>
+                            <input type="text" name="firstName" id="firstName" minlength="5" maxlength="20" required >
+                        </li>
+                        <li class="col2">
+                            <label for="lastName">LAST NAME</label>
+                            <input type="text" name="lastName" id="lastName" minlength="5" maxlength="20" required >
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="col1">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </li>
+                        <li class="col2">   
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="number" name="phone" id="phone" required>
+                        </li>
+                    </ul>
+                    <ul>    
+                        <li class="col1">    
+                            <label for="password">PASSWORD</label>
+                            <input type ="password" name="password" id="password" maxlength="20" required>
+                        </li>
+                        <li class="col2">
+                            <label for="confirmPassword">CONFIRM PASSWORD</label>
+                            <input type ="password" name="confirmPassword" id="confirmPassword" maxlength="20" required>
+                        </li>
+                    </ul>
+                </form>
+        
+            <div class="buttonWrapper">
+                <button>Create Account</button>
+                <p>Already hace an account? Log in</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
