@@ -9,15 +9,14 @@ html,body{
    
 }
 main{
-    height: 100dvh;
-    width: 100dvw;
+    height:100vh;
+    width: 100vw;
     display:flex;
 
 }
 .graphicsContainer{
-    min-width: 40dvw;
-    max-width: 40dvw;
-    min-height: 100dvh;
+    width: 40vw;
+    height: 100vh;
     background-image: url("images/unsplash.jpg");
     background-repeat: no-repeat;
     background-size:cover;
@@ -27,11 +26,12 @@ main{
   
 }
 .formContainer{
-
+    width: 60vw;
+    height: 100vh;
     background-color: rgb(235, 235, 235);
     display:grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    box-shadow: 10px 5px 5px black;
+    grid-template-rows: 1fr 2fr 1fr;
+    
 
 }
 
@@ -49,10 +49,8 @@ main{
 .textWrapper{
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     text-wrap: wrap;
-    margin-top: 5vw;
-    padding: 3vw;
 }
 
 h2{
@@ -60,26 +58,33 @@ h2{
 }
 
 .buttonWrapper{
+    background-color: rgb(235, 235, 235);
+   
     display: flex;
     flex-direction: column;
     gap:10px;
-    padding: 2vw;
+    padding:2dvw;
 }
 
 
 form{
+   
     display:flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     color: rgb(34, 35, 37);
-    padding: 2vw;
-    box-shadow: 0px 1px 40px rgba(0, 0, 0, 0.224);
+    
+    
+}
+.formWrapper{
+
+    background-color: white;
+    padding: 2dvw;
 }
 
 legend{
     width: 40dvw;
-    
     gap: 2px;
     font-size: 30px;
     
@@ -88,6 +93,7 @@ ul{
     display: flex;
     list-style: none;
     padding:0px;
+    border-color: #E5E7EB;
    
 }
 
@@ -100,14 +106,14 @@ li {
     gap: 5px;
     font-size: 12px;
     width: 200px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.224);
+  
     
    
   }
 
 
 button{
-    background-color: rgb(53, 84, 0);
+    background-color:#596D48;
     color: white;
     width: 200px;
     height: 35px;
