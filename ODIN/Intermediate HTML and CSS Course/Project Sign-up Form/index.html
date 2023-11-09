@@ -18,8 +18,10 @@
         </div>
         <div class="formContainer">
             <div class="textWrapper">
-                <h2>This is not a real online service! You know you need something like this in your life
-                    to help you realize your deepest dreams. Sign up <em>now</em> to get started:
+                <h2>This is not a real online service!
+                    You know you need something like this in your life
+                    to help you realize your deepest dreams. Sign up <em>now</em>
+                    to get started:
                 </h2>
                 <h2>You <em>know</em> you want to.</h2>
             </div>
@@ -30,17 +32,17 @@
                     <ul>
                         <li class="col1">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" name="firstName" id="firstName" minlength="5" maxlength="20" required >
+                            <input type="text" name="firstName" id="firstName" minlength="5" maxlength="20" required>
                         </li>
                         <li class="col2">
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" name="lastName" id="lastName" minlength="5" maxlength="20" required >
+                            <input type="text" name="lastName" id="lastName" minlength="5" maxlength="20" required>
                         </li>
                     </ul>
                     <ul>
                         <li class="col1">
                             <label for="email">EMAIL</label>
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" name="email" id="email" autocomplete="username" required>
                         </li>
                         <li class="col2">   
                             <label for="phone">PHONE NUMBER</label>
@@ -49,18 +51,19 @@
                     </ul>
                     <ul>    
                         <li class="col1">    
-                            <label for="password">PASSWORD</label>
-                            <input type ="password" name="password" id="password" value ="" minlength="8" maxlength="20" required>
+                            <label for="password">PASSWORD</label> 
+                            <input type ="password" name="password" id="password" minlength="8" maxlength="20"autocomplete="new-password" required>
+                            <span type = "text" id="error" style = "color:red" ></span>
                         </li>
                         <li class="col2">
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type ="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="20" required>
+                            <input type ="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="20"autocomplete="new-password" required>
                         </li>
                     </ul>
                 </div>
                     <div class="buttonWrapper">
-                        <button type="submit" value="Sign in">Create Account</button>
-                        <p>Already hace an account? <a href="Log in">Log in</a></p>
+                        <button type="submit" class= "submitButton" id="submitButton">Create Account</button>
+                        <p>Already have an account? <a href="Log in">Log in</a></p>
                         
                     </div>
                 </form>
