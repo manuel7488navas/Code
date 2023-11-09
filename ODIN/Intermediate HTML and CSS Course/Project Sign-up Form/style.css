@@ -3,15 +3,17 @@
     src: url(https://cdn.statically.io/gh/TheOdinProject/theodinproject/efdc2888072f409e687d31dc580595dbe4fe0ff4/app/assets/fonts/Norse-Bold.otf) format("truetype");
 }
 html,body{
-   margin:0px;
+   margin:0;
+   padding:0;
+   height:100vh;
+   width: 100vw;
    font-family: Arial, Helvetica, sans-serif;
    
    
 }
 main{
-    height:100vh;
-    width: 100vw;
     display:flex;
+
 
 }
 .graphicsContainer{
@@ -26,11 +28,11 @@ main{
   
 }
 .formContainer{
-    width: 60vw;
+    max-width: 60vw;
     height: 100vh;
     background-color: rgb(235, 235, 235);
     display:grid;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
     
 
 }
@@ -47,10 +49,16 @@ main{
 }
 
 .textWrapper{
-    display:flex;
+    font-size: 12px;
+    padding: 50px;
+    display: flex;
     flex-direction: column;
-    justify-content:center;
-    text-wrap: wrap;
+    justify-content: center;
+    align-items: left;
+    text-wrap:wrap ;
+  
+    
+   
 }
 
 h2{
@@ -58,22 +66,23 @@ h2{
 }
 
 .buttonWrapper{
+    height: 30vh;
     background-color: rgb(235, 235, 235);
-   
     display: flex;
     flex-direction: column;
     gap:10px;
-    padding:2dvw;
+    padding:2vw;
 }
 
 
 form{
-   
+    max-width: 60vw;
     display:flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
     color: rgb(34, 35, 37);
+    
     
     
 }
@@ -106,7 +115,7 @@ li {
     gap: 5px;
     font-size: 12px;
     width: 200px;
-  
+    font-weight:600;
     
    
   }
@@ -143,3 +152,12 @@ footer{
     
 }
 
+a{
+    color:#596D48;
+    text-decoration: none;
+}
+
+input:focus {
+ 
+    border:solid 4px #E5E7EB;
+  }
