@@ -28,7 +28,7 @@ main{
   
 }
 .formContainer{
-    max-width: 60vw;
+    width: 60vw;
     height: 100vh;
     background-color: rgb(235, 235, 235);
     display:grid;
