@@ -46,3 +46,12 @@ li{
     gap:20px
 }
 
+a{
+    text-decoration: none;
+    color:#f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
