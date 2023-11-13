@@ -4,46 +4,63 @@ html{
 body{
     margin:0px;
     background: #cbd5e1;
+    height:100%;
+    width: 100%;
     
 }
 
 .container{
     display:grid;
     grid-template-columns: 1fr 5fr;
+
+
     
     
 }
 
 .dashboard{
     background: #0284c7;
-    color:#f8fafc;
-    display: grid;
-    grid-template: 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    
    
 }
 
-.header{
-    display:flex;
-    gap:10px;
-    padding-left:1rem;
+.dashboard>.header{
+   display:flex;
+   align-items: center;
+   padding:1rem;
+   gap:10px
 }
+
+.dashboard>.header>svg,h2{
+    color:#f8fafc;
+    fill:#f8fafc;
+    width: 2.5rem;
+}
+
+.dashboard>.nav>ul,li>a>svg{
+    fill: #f8fafc;   
+}
+.dashboard>.nav>ul,li>a{
+    color:#f8fafc;
+}
+
 svg{
-    fill: #f8fafc;
     width:1.5rem;
     aspect-ratio: 1;
 }
-.nav{
-    margin-bottom:2rem;
 
-}
 ul{
-    padding:0.6rem;
+    padding:1.5rem;
 }
 
 li{
     list-style-type:none;
     padding:10px;
     font-weight: 900;
+    
     display: flex;
     align-items: center;
     gap:20px
@@ -51,7 +68,7 @@ li{
 
 a{
     text-decoration: none;
-    color:#f8fafc;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +85,8 @@ a{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     background: #f8fafc;
+
+    
 }
 .search-bar{
     display:flex;
@@ -120,13 +139,18 @@ a{
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 1fr;
     align-items: center;
+   
 
 }
+.name-data > .user-icon{
+    width:3.5rem;
+}
 .name-buttons{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
     grid-column: span 2;
-    justify-content: center;
+    display:flex;
+    justify-content: right;
+    align-items: center;
+    gap:20px;
 }
 button{
     background-color: #0284c7;
@@ -140,7 +164,7 @@ button{
 
 .wrapper{
     display:grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 
 }
 
@@ -148,8 +172,30 @@ button{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-}
+    padding:1.2rem;
+    justify-content: center;
+    align-items:center;
+   
+    
 
+}
+.project{
+    background: #f8fafc;
+    width: 25rem;
+    aspect-ratio: 2;
+    border-left: solid 10px #eab308;
+    border-radius: 10px;
+    padding: 1rem;
+    margin:1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.cards-icons{
+    fill: #3f3f46;
+    display:flex;
+    justify-content: right;
+    gap:10px;
+}
 .various{
     display:grid;
     grid-template-columns: 1fr;
