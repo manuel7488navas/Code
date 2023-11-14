@@ -190,6 +190,7 @@ button{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
     gap:1.5rem;
+    
   
 }
 
@@ -209,15 +210,22 @@ button{
 
 .project{
     background: #f8fafc;
-    max-width: 32rem;
-    aspect-ratio: 2;
+    max-width: max(30rem);
+    height: max(15rem);
     border-left: solid 10px #eab308;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:20px
+    padding:23px;
+    overflow:auto;
     
+}
+.project>*>p{
+    font-size: clamp(0.5rem,1rem,1.5rem);
+    text-wrap: wrap;
+    overflow-wrap:normal;
+ 
 }
 .cards-icons{
     fill: #3f3f46;
@@ -274,8 +282,8 @@ button{
     border-radius: 10px;
     display:grid;
     grid-template-rows: repeat(4, 0.1fr);
-    height: 20rem;
-    width: 20rem;
+    height: max(20rem);
+    width: max(25rem);
     padding-top:20px;
     gap:20px;
     justify-content: center;
