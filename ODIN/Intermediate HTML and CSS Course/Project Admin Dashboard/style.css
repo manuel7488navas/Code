@@ -182,7 +182,7 @@ button{
 
 .cards{
     display: grid;
-    grid-template-columns: 0.1fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
     gap:1.5rem;
   
@@ -203,7 +203,7 @@ button{
 
 .project{
     background: #f8fafc;
-    width: 32rem;
+    max-width: 32rem;
     aspect-ratio: 2;
     border-left: solid 10px #eab308;
     border-radius: 10px;
