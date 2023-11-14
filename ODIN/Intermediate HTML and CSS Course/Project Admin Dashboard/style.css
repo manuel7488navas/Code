@@ -175,7 +175,7 @@ button{
     display:grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 0.1fr 4fr;
-    padding: 1rem;
+    padding: 2rem;
     
 
 }
@@ -196,6 +196,7 @@ button{
     justify-content: left;
     align-items: center;
     margin-top: 2rem;
+    margin-left:20px;
 
 
 }
@@ -224,7 +225,71 @@ button{
 .board{
     display:grid;
     grid-template-rows: 1fr 0.1fr 1fr;
-    background: #f8fafc;
     aspect-ratio: 0.8;
     border-radius: 10px;
+    margin-left:20px;
+ 
+}
+.board>h2{
+    color:#020617;
+    width:11rem;
+    height: 1rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2rem;
+   
+
+}
+
+.announcements{
+    background: #f8fafc;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding:40px;
+    width: 20rem;
+    aspect-ratio: 0.8;
+    
+}
+
+.announcements>*>h3{
+    color:#020617;
+    
+}
+
+.announcements> .one, .announcements> .two{
+    border-bottom: solid 1px #cbd5e1;
+}
+
+.trending{
+    background: #f8fafc;
+    border-radius: 10px;
+    display:grid;
+    grid-template-rows: repeat(4, 0.1fr);
+    height: 20rem;
+    width: 20rem;
+    padding-top:20px;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.trending>.user{
+    display:grid;
+    grid-template-columns: 0.2fr 1fr;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.trending>*>.user-icon{
+    grid-row: span 2;
+    margin-right: 20px;
+    
 }
