@@ -1,8 +1,8 @@
 const myLibrary = [];
 
-function Book(name, author, pages, year) {
+function Book(title, author, pages, year) {
   // the constructor...
-  this.name = name;
+  this.title = title;
   this.author = author;
   this.pages = pages;
   this.year = year;
