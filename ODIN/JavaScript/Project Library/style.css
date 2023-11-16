@@ -1,0 +1,60 @@
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: #A2D9CE;
+    width: 100%;
+    margin:0px;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 30%;
+    background: #73C6B6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin:1rem;
+
+}
+.header>h1{
+    font-size: 3rem;
+    color:#082C15;
+}
+button{
+    position: absolute;
+    transform: translate(400%, 0%);
+    background: #082C15;
+    color: #D4EFDF;
+    border-radius: 100vh;
+    border:0px;
+    width: 6rem;
+    aspect-ratio: 2;
+    font-weight: 800;
+    font-size: 1rem;
+
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding:1rem;
+    gap:2rem;
+}
+
+.card{
+    background: #D4EFDF;
+    width: 25rem;
+    aspect-ratio: 1.3;
+    border-radius: 10px;
+}
