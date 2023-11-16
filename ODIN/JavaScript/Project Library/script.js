@@ -1,6 +1,6 @@
-/*const myLibrary = [];
+let myLibrary = [];
 
-function Book(title, author, pages, year) {
+/*function Book(title, author, pages, year) {
   // the constructor...
   this.title = title;
   this.author = author;
@@ -20,7 +20,21 @@ function addBookToLibrary() {
 document.getElementById("newBook").addEventListener("click",function(){
   document.querySelector(".pop-up").style.display= "flex";
 })
-//Close pop-up after add content
+//Close pop-up
 document.getElementById("add").addEventListener("click",function(){
   document.querySelector(".pop-up").style.display= "none";
-})
+});
+
+let inputTitle = "";
+function input(){
+    document.getElementById("title").addEventListener("input",function(){
+      inputTitle = document.getElementById("title").value;
+      console.log(inputTitle);
+    });
+ 
+
+  }
+
+ 
+
+    console.log(input())

@@ -54,6 +54,8 @@ button{
     display: none;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
+    top:10rem;
     align-items: center;
     gap:2rem;
     
