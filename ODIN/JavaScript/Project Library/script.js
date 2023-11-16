@@ -1,4 +1,4 @@
-const myLibrary = [];
+/*const myLibrary = [];
 
 function Book(title, author, pages, year) {
   // the constructor...
@@ -13,4 +13,14 @@ function addBookToLibrary() {
   // do stuff here
   for (let i=0;i<myLibrary.length;i++){
   }
-}
+}*/
+
+
+//Open pop-up
+document.getElementById("newBook").addEventListener("click",function(){
+  document.querySelector(".pop-up").style.display= "flex";
+})
+//Close pop-up
+document.getElementById("add").addEventListener("click",function(){
+  document.querySelector(".pop-up").style.display= "none";
+})

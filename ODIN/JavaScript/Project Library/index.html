@@ -5,18 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project: Library</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
 </head>
 <body>
     <div class="container">
         <div class="header">
             <h1>My Library</h1>
-            <button>New Book</button>
+            <button class="button" id="newBook">New Book</button>
         </div>
+        <class class="pop-up">
+            <h1>Add a book</h1>
+            <input type="text" placeholder="title" id="title">
+            <input type="text" placeholder="author" id="author">
+            <input type="number" placeholder="pages" id="pages">
+            <input type="number" placeholder="year" id="year">
+            <button class="button" id="add">Add</button>
+        </class>
         <div class="wrapper">
-            <div class="card one"></div>
+    
         </div>
     </div>
-    
+    <script src="script.js"></script>  
 </body>
 </html>
