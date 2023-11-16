@@ -20,7 +20,7 @@ function addBookToLibrary() {
 document.getElementById("newBook").addEventListener("click",function(){
   document.querySelector(".pop-up").style.display= "flex";
 })
-//Close pop-up
+//Close pop-up after add content
 document.getElementById("add").addEventListener("click",function(){
   document.querySelector(".pop-up").style.display= "none";
 })
