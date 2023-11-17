@@ -1,19 +1,24 @@
-let myLibrary = [];
 
-/*function Book(title, author, pages, year) {
-  // the constructor...
-  this.title = title;
-  this.author = author;
-  this.pages = pages;
-  this.year = year;
 
-}
 
-function addBookToLibrary() {
-  // do stuff here
-  for (let i=0;i<myLibrary.length;i++){
-  }
-}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //Open pop-up
@@ -25,16 +30,35 @@ document.getElementById("add").addEventListener("click",function(){
   document.querySelector(".pop-up").style.display= "none";
 });
 
-let inputTitle = "";
-function input(){
-    document.getElementById("title").addEventListener("input",function(){
-      inputTitle = document.getElementById("title").value;
-      console.log(inputTitle);
-    });
+
+let myLibrary = [];
+
+function Book(title, author) {
+  // the constructor...
+  this.title = title;
+  this.author = author;
+
+
+}
+
  
+function addBookToLibrary() {
+  // do stuff here
+  const title = document.getElementById("title");
+  title.textContent = document.getElementById("title").value;
+  const author = document.getElementById("author");
+  author.textContent = document.getElementById("author").value;
+  const btn = document.getElementById("add"); 
+  btn.onclick = ()=>{
+  const book = new Book(title.value, author.value);
+  myLibrary.push(book);  
 
   }
-
  
 
-    console.log(input())
+ };
+
+
+addBookToLibrary();
+
+console.log(myLibrary);
