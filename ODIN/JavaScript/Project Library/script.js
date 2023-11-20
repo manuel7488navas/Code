@@ -59,58 +59,67 @@ function addBookToLibrary() {
 
   const book = new Book(title.value, author.value, pages.value, year.value);
   myLibrary.push(book); 
-  
-
-  const card =document.createElement("div");
-  card.id ="card";
-  wrapper.appendChild(card);
-
-  title = document.createElement("h1");
-  title.id = "title";
-  card.appendChild(title);
-  title.textContent = document.getElementById("title").value;
-
-  author = document.createElement("h2");
-  author.id = "author";
-  card.appendChild(author);
-  author.textContent = document.getElementById("author").value;
-
-  pages = document.createElement("h3");
-  pages.id = "pages";
-  card.appendChild(pages);
-  pages.textContent =document.getElementById("pages").value +" Pages";
-
-  year = document.createElement("h3");
-  year.id = "year";
-  card.appendChild(year);
-  year.textContent = "Year: "+document.getElementById("year").value;
-
-
-  const button = document.createElement("button");
-  button.textContent="X";
-  button.id ="deleteButton";
-  card.appendChild(button);
-  
-document.getElementById("deleteButton").addEventListener("click", () => {
- wrapper.removeChild(card);
-   
-  
-  });
-
-
-
-
-
 
   dialog.close();
   
   console.log(myLibrary);
   }
 
+  
+  }
 
- 
- };
 
-addBookToLibrary();
+
+  function createCard(){
+
+
+    const buttonAdd = document.getElementById("add"); 
+    buttonAdd.onclick = ()=>{
+      
+      const card =document.createElement("div");
+      card.id ="card";
+      wrapper.appendChild(card);
+
+      title = document.createElement("h1");
+      title.id = "title";
+      card.appendChild(title);
+      title.textContent = document.getElementById("title").value;
+
+      author = document.createElement("h2");
+      author.id = "author";
+      card.appendChild(author);
+      author.textContent = document.getElementById("author").value;
+
+      pages = document.createElement("h3");
+      pages.id = "pages";
+      card.appendChild(pages);
+      pages.textContent =document.getElementById("pages").value +" Pages";
+
+      year = document.createElement("h3");
+      year.id = "year";
+      card.appendChild(year);
+      year.textContent = "Year: "+document.getElementById("year").value;
+
+
+      const button = document.createElement("button");
+      button.textContent="X";
+      button.id ="deleteButton";
+      card.appendChild(button);
+  
+document.getElementById("deleteButton").addEventListener("click", () => {
+ wrapper.removeChild(card);
+   
+
+  });
+
+    }
+  }
+
+
+
+  addBookToLibrary();
+ //createCard();
+
+
 
 
