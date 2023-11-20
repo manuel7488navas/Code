@@ -15,7 +15,15 @@ document.getElementById("close").addEventListener("click", () => {
 
 
 
-let myLibrary = [];
+let myLibrary = [
+  {
+		title: 'The unicorn',
+		author: 'Iris Murdoch',
+		pages: 345,
+    year: 1969,
+	},
+
+];
 
 function Book(title, author, pages, year) {
   // the constructor...
@@ -45,9 +53,10 @@ function addBookToLibrary() {
   let year = document.getElementById("year");
   year.textContent = document.getElementById("year").value;
 
-  const btn = document.getElementById("add"); 
+  const buttonAdd = document.getElementById("add"); 
 
-  btn.onclick = ()=>{
+  buttonAdd.onclick = ()=>{
+
   const book = new Book(title.value, author.value, pages.value, year.value);
   myLibrary.push(book); 
   
@@ -81,11 +90,21 @@ function addBookToLibrary() {
   button.textContent="X";
   button.id ="deleteButton";
   card.appendChild(button);
+  
+document.getElementById("deleteButton").addEventListener("click", () => {
+ wrapper.removeChild(card);
+   
+  
+  });
+
+
+
 
 
 
   dialog.close();
   
+  console.log(myLibrary);
   }
 
 
@@ -93,4 +112,5 @@ function addBookToLibrary() {
  };
 
 addBookToLibrary();
+
 
