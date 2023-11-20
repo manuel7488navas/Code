@@ -48,17 +48,32 @@ button{
     margin-left:5rem;
 
 }
+
+#close{
+    position: absolute;
+    top:0px;
+    left:0px;
+    transform: scale(30%);
+    border-radius: 100%;
+    aspect-ratio: 1;
+    font-size: 2.5rem;
+}
+
+dialog{
+    background: #bbf7d0;
+    border:0px;
+    padding:2rem;
+    border-radius: 10px;
+
+}
 .pop-up{
     background: #bbf7d0;
     width: 20rem;
     aspect-ratio: 1.1;
     border-radius: 10px;
-    padding:2rem;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    position: absolute;
-    top:15rem;
     align-items: center;
     gap:2rem;
     
@@ -104,6 +119,28 @@ button{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     text-transform: capitalize;
 }
 
+#card>h1{
+    color:#082C15;
+}
+
+#card>h2{
+    color:#2a4f38;
+}
+
+#card>h3{
+    color:#29332d;
+}
+
+#deleteButton{
+    position: relative;
+    bottom:-3rem;
+    right:-12rem;
+    transform: scale(30%);
+    border-radius: 100%;
+    aspect-ratio: 1;
+    font-size: 2.5rem;
+}

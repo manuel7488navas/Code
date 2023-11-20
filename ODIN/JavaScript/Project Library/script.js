@@ -1,12 +1,18 @@
-
 //Open pop-up
-document.getElementById("newBook").addEventListener("click",function(){
-  document.querySelector(".pop-up").style.display= "flex";
-})
-//Close pop-up
-document.getElementById("add").addEventListener("click",function(){
-  document.querySelector(".pop-up").style.display= "none";
+const dialog = document.querySelector("dialog");
+
+document.getElementById("newBook").addEventListener("click",()=>{
+  dialog.showModal();
 });
+
+
+//Close pop-up
+
+document.getElementById("close").addEventListener("click", () => {
+  dialog.close();
+
+});
+
 
 
 let myLibrary = [];
@@ -20,9 +26,9 @@ function Book(title, author, pages, year) {
 
 }
 
- 
+//Create cards and adds to library
 function addBookToLibrary() {
-  // do stuff here
+
   const container = document.getElementById("container");
   const wrapper = document.getElementById("wrapper");
   container.appendChild(wrapper);
@@ -70,6 +76,16 @@ function addBookToLibrary() {
   card.appendChild(year);
   year.textContent = "Year: "+document.getElementById("year").value;
 
+
+  const button = document.createElement("button");
+  button.textContent="X";
+  button.id ="deleteButton";
+  card.appendChild(button);
+
+
+
+  dialog.close();
+  
   }
 
 
