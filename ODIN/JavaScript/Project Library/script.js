@@ -58,14 +58,10 @@ function addBookToLibrary() {
   buttonAdd.onclick = ()=>{
 
   const book = new Book(title.value, author.value, pages.value, year.value);
-  myLibrary.push(book); 
-
-  dialog.close();
-  
+  myLibrary.push(book);
   console.log(myLibrary);
-  }
-
   
+  }
   }
 
 
@@ -75,7 +71,7 @@ function addBookToLibrary() {
 
     const buttonAdd = document.getElementById("add"); 
     buttonAdd.onclick = ()=>{
-      
+
       const card =document.createElement("div");
       card.id ="card";
       wrapper.appendChild(card);
@@ -118,8 +114,8 @@ document.getElementById("deleteButton").addEventListener("click", () => {
 
 
   addBookToLibrary();
- //createCard();
 
+ createCard();
 
 
 
