@@ -14,7 +14,7 @@ document.getElementById("close").addEventListener("click", () => {
 });
 
 
-
+//My library...
 let myLibrary = [
   {
 		title: 'The unicorn',
@@ -24,15 +24,16 @@ let myLibrary = [
 	},
 
 ];
-
-function Book(title, author, pages, year) {
   // the constructor...
+function Book(title, author, pages, year) {
+
   this.title = title;
   this.author = author;
   this.pages = pages;
   this.year = year;
 
 }
+
 
 //Create cards and adds to library
 function addBookToLibrary() {
@@ -55,22 +56,21 @@ function addBookToLibrary() {
 
   const buttonAdd = document.getElementById("add"); 
 
-  buttonAdd.onclick = ()=>{
+
 
   const book = new Book(title.value, author.value, pages.value, year.value);
   myLibrary.push(book);
   console.log(myLibrary);
+
+
+  dialog.close();
+  }
+
   
-  }
-  }
 
 
 
   function createCard(){
-
-
-    const buttonAdd = document.getElementById("add"); 
-    buttonAdd.onclick = ()=>{
 
       const card =document.createElement("div");
       card.id ="card";
@@ -97,25 +97,25 @@ function addBookToLibrary() {
       year.textContent = "Year: "+document.getElementById("year").value;
 
 
-      const button = document.createElement("button");
-      button.textContent="X";
-      button.id ="deleteButton";
-      card.appendChild(button);
+      const deleteButton = document.createElement("button");
+      deleteButton.textContent="X";
+      deleteButton.id ="deleteButton";
+      card.appendChild(deleteButton);
+      deleteButton.addEventListener("click", function(){
+        deleteCard();
+      });
   
-document.getElementById("deleteButton").addEventListener("click", () => {
- wrapper.removeChild(card);
-   
+      
+      };
 
-  });
-
-    }
-  }
+    
+  
 
 
-
-  addBookToLibrary();
-
- createCard();
-
-
-
+function deleteCard(){
+  const wrapper = document.getElementById("wrapper");
+  deleteButton.addEventListener("click", () => {
+    wrapper.removeChild(card);
+      
+     });
+}
