@@ -76,22 +76,22 @@ function addBookToLibrary() {
       card.id ="card";
       wrapper.appendChild(card);
 
-      title = document.createElement("h1");
+      const title = document.createElement("h1");
       title.id = "title";
       card.appendChild(title);
       title.textContent = document.getElementById("title").value;
 
-      author = document.createElement("h2");
+      const author = document.createElement("h2");
       author.id = "author";
       card.appendChild(author);
       author.textContent = document.getElementById("author").value;
 
-      pages = document.createElement("h3");
+      const pages = document.createElement("h3");
       pages.id = "pages";
       card.appendChild(pages);
       pages.textContent =document.getElementById("pages").value +" Pages";
 
-      year = document.createElement("h3");
+      const year = document.createElement("h3");
       year.id = "year";
       card.appendChild(year);
       year.textContent = "Year: "+document.getElementById("year").value;
