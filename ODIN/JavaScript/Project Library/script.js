@@ -15,15 +15,7 @@ document.getElementById("close").addEventListener("click", () => {
 
 
 //My library...
-let myLibrary = [
-  {
-		title: 'The unicorn',
-		author: 'Iris Murdoch',
-		pages: 345,
-    year: 1969,
-	},
-
-];
+let myLibrary = [];
   // the constructor...
 function Book(title, author, pages, year) {
 
@@ -42,27 +34,24 @@ function addBookToLibrary() {
   const wrapper = document.getElementById("wrapper");
   container.appendChild(wrapper);
 
-  let title = document.getElementById("title");
+  const title = document.getElementById("title");
   title.textContent = document.getElementById("title").value;
 
-  let author = document.getElementById("author");
+  const author = document.getElementById("author");
   author.textContent = document.getElementById("author").value;
 
-  let pages = document.getElementById("pages");
+  const pages = document.getElementById("pages");
   pages.textContent = document.getElementById("pages").value;
 
-  let year = document.getElementById("year");
+  const year = document.getElementById("year");
   year.textContent = document.getElementById("year").value;
 
   const buttonAdd = document.getElementById("add"); 
 
-
-
   const book = new Book(title.value, author.value, pages.value, year.value);
   myLibrary.push(book);
   console.log(myLibrary);
-
-
+  resetInputFields();
   dialog.close();
   }
 
@@ -76,6 +65,7 @@ function addBookToLibrary() {
     
       const card =document.createElement("div");
       card.id ="card";
+      card.setAttribute("index", myLibrary.length); 
       wrapper.appendChild(card);
 
       const title = document.createElement("h1");
@@ -122,8 +112,23 @@ function addBookToLibrary() {
       deleteButton.id ="deleteButton";
       card.appendChild(deleteButton);
       deleteButton.addEventListener("click", function(){
-        wrapper.removeChild(card);
+        wrapper.removeChild(card); 
+
+        // Retrieve the index from the data attribute
+        const cardIndex = parseInt(card.getAttribute("index"), 10);
+
+        // Remove the corresponding book from myLibrary
+        if (!isNaN(cardIndex)) {
+          myLibrary.splice(cardIndex, 1);
+          console.log(myLibrary);
+      }
       });
-  
       
       };
+
+      function resetInputFields() {
+        document.getElementById("title").value = "";
+        document.getElementById("author").value = "";
+        document.getElementById("pages").value = "";
+        document.getElementById("year").value = "";
+      }
