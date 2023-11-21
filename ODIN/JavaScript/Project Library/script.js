@@ -71,7 +71,9 @@ function addBookToLibrary() {
 
 
   function createCard(){
+    const wrapper = document.getElementById("wrapper");
 
+    
       const card =document.createElement("div");
       card.id ="card";
       wrapper.appendChild(card);
@@ -102,20 +104,8 @@ function addBookToLibrary() {
       deleteButton.id ="deleteButton";
       card.appendChild(deleteButton);
       deleteButton.addEventListener("click", function(){
-        deleteCard();
+        wrapper.removeChild(card);
       });
   
       
       };
-
-    
-  
-
-
-function deleteCard(){
-  const wrapper = document.getElementById("wrapper");
-  deleteButton.addEventListener("click", () => {
-    wrapper.removeChild(card);
-      
-     });
-}
