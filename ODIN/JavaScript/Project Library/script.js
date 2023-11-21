@@ -98,6 +98,24 @@ function addBookToLibrary() {
       card.appendChild(year);
       year.textContent = "Year: "+document.getElementById("year").value;
 
+      const toggle = document.createElement("label");
+      toggle.classList.add("switch");
+      card.appendChild(toggle);
+
+      const read = document.createElement("h3");
+      read.textContent="Read?";
+      toggle.appendChild(read);
+
+      const input = document.createElement("input");
+      input.type="checkbox";
+      input.checked = false;
+      toggle.appendChild(input);
+
+      const span=document.createElement("span");
+      span.classList.add("slider", "round");
+      toggle.appendChild(span);
+
+
 
       const deleteButton = document.createElement("button");
       deleteButton.textContent="X";
