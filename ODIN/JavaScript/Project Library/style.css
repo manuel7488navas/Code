@@ -118,7 +118,7 @@ dialog{
 
 }
 
-#card{
+.card{
     background: #D4EFDF;
     width: 20rem;
     height: auto;
@@ -131,7 +131,7 @@ dialog{
     
 }
 
-#card>h1{
+.card>h1{
     overflow-wrap:break-word;
     color:#082C15;
     font-size:1.6rem;
@@ -139,12 +139,12 @@ dialog{
 
 }
 
-#card>h2{
+.card>h2{
     color:#2a4f38;
     font-size:1.4rem;
 }
 
-#card>h3{
+.card>h3{
     color:#29332d;
     font-size:1.2rem;
 }
