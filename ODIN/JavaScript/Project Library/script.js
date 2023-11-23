@@ -63,7 +63,6 @@ function addBookToLibrary() {
 
     const card = document.createElement("div");
     const cardId = "card_" + Date.now();
-    const cardIndex = myLibrary.length;
     card.classList.add("card");
     card.id = cardId;
     wrapper.appendChild(card);
