@@ -1,0 +1,28 @@
+html{
+    margin:0px;
+    background-color: #fee2e2;
+}
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameboard{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cell{
+ width: 8rem;
+ aspect-ratio: 1;
+ position: relative;
+}
+
+.cell:nth-child(-n+6){
+    border-bottom: solid #450a0a 3px;
+}
+.cell:not(:nth-child(3n)){
+    border-right: solid #450a0a 3px;
+}
