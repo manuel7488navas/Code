@@ -1,3 +1,6 @@
+const title = document.createElement("h1");
+document.body.appendChild(title);
+title.textContent="Project Etch-a-Sketch"
 const main = document.createElement("main");
 document.body.appendChild(main);
 const grid = document.createElement("div");
@@ -12,7 +15,7 @@ button.className = "button";
 const buttonText = document.createElement("div");
 button.appendChild(buttonText);
 buttonText.className = "buttonText";
-buttonText.textContent = "Choose Grid Size";
+buttonText.textContent = "Grid Size";
 const resetButton = document.createElement("button");
 main.appendChild(resetButton);
 resetButton.className = "resetButton"; 
