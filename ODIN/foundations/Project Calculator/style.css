@@ -81,10 +81,13 @@ button{
     font-size: 30px;
     font-weight: 600;
     color: rgb(60, 56, 50);
+    justify-content: center;
+    align-items: center;
     
 }
-#backspace-button{
-    grid-column: span 2; 
+.clear-button{
+    width:10rem;
+    grid-column: span 3;
 }
 .equals-button{
     grid-column: span 2;

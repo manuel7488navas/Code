@@ -65,26 +65,7 @@ clearButton.addEventListener('click', () => {
   updateDisplay();
 });
 
-// Add event listener for the backspace button
-backButton.addEventListener('click', () => {
-    if (currentInput.length > 0) {
-      currentInput = currentInput.slice(0, -1);
-      updateDisplay();
-    } else if (currentResult !== null) {
-      currentInput = currentResult.toString();
-      currentResult = null;
-      updateDisplay();
-    }
-  });
-  
-backButton.addEventListener('click', () => {
-    if (currentInput.length > 0) {
-      currentInput = currentInput.slice(0, -1);
-      updateDisplay();
-    }
-  });
 
-  
 // Function to perform calculations
 function operate() {
     if (currentOperator !== null) {
@@ -117,5 +98,3 @@ function operate() {
 // Initialize the display
 updateDisplay();
 
-
-//keyboard support
