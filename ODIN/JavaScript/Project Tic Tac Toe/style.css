@@ -92,9 +92,13 @@ body{
     align-items: center;
     color:#450a0a;
     font-size: 5rem;
+   
 
 
 
+}
+.text{
+    padding:2rem;
 }
 
 #restartButton{
@@ -104,6 +108,7 @@ body{
     color: #fecaca;
     padding: 1rem;
     border-radius: 20px;
+    
 
 }
 
@@ -112,5 +117,6 @@ body{
 }
 
 .message.show{
+    
     display: flex;
 }
